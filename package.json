@@ -1,0 +1,24 @@
+{
+  "name": "saucedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huskov-Anton/saucedemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Huskov-Anton/saucedemo/issues"
+  },
+  "homepage": "https://github.com/Huskov-Anton/saucedemo#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^13.7.3"
+  }
+}
