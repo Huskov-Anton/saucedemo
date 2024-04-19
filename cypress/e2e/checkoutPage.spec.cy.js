@@ -36,7 +36,7 @@ describe('Checkout Page', ()=>{
         cy.findByTestId('total-label').should('contain', '60.45')
       });
        
-      it('should display the price according to items added to the cart', () => {
+    it('should display the price according to items added to the cart', () => {
     
         cy.addExactItem('add-to-cart-sauce-labs-backpack')
         cy.addExactItem('add-to-cart-sauce-labs-bike-light')
@@ -55,7 +55,7 @@ describe('Checkout Page', ()=>{
         cy.findByTestId('total-label').should('contain', '43.18')
       });
     
-      it('should provide the ability for submitting the checkout ', () => {
+    it('should provide the ability for submitting the checkout ', () => {
     
         cy.addExactItem('add-to-cart-sauce-labs-backpack')
         cy.addExactItem('add-to-cart-sauce-labs-bike-light')
@@ -75,7 +75,7 @@ describe('Checkout Page', ()=>{
         cy.url().should('include', 'inventory')
       });
 
-      it('shouldnt provide the ability to proceeding checkout without filling firstname field', () => {
+    it('shouldnt provide the ability to proceeding checkout without filling firstname field', () => {
         cy.addExactItem('add-to-cart-sauce-labs-backpack')
         cy.findByTestId('shopping-cart-link').click()
         cy.findByTestId('checkout').click()
@@ -87,7 +87,7 @@ describe('Checkout Page', ()=>{
         cy.findByTestId('error').should('contain', 'Error: First Name is required')
       });
 
-      it('shouldnt provide the ability to proceeding checkout without filling lastname field', () => {
+    it('shouldnt provide the ability to proceeding checkout without filling lastname field', () => {
         cy.addExactItem('add-to-cart-sauce-labs-backpack')
         cy.findByTestId('shopping-cart-link').click()
         cy.findByTestId('checkout').click()
@@ -98,7 +98,7 @@ describe('Checkout Page', ()=>{
         cy.findByTestId('error').should('contain', 'Error: Last Name is required')
       });
 
-      it('shouldnt provide the ability to proceeding checkout without filling post code field', () => {
+    it('shouldnt provide the ability to proceeding checkout without filling post code field', () => {
         cy.addExactItem('add-to-cart-sauce-labs-backpack')
         cy.findByTestId('shopping-cart-link').click()
         cy.findByTestId('checkout').click()
