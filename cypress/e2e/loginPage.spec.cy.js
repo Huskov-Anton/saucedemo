@@ -31,4 +31,14 @@ describe("Login Page", () => {
       "Epic sadface: Username and password do not match any user in this service"
     );
   });
+
+  it('shouldnt provide the ability to logged in with "locked_out_user" username', () => {
+    cy.findByTestId("username").type("locked_out_user");
+    cy.findByTestId("password").type("secret_sauce");
+    cy.findByTestId("login-button").click();
+    cy.findByTestId("error").should(
+      "contain",
+      "Epic sadface: Sorry, this user has been locked out."
+    );
+  });
 });

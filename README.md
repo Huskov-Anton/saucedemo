@@ -11,5 +11,7 @@
 App for testing: `https://www.saucedemo.com/`
 
 ## Optional task
-1. Cover testcases such as handling errors during checkout
+1. Cover testcases such as handling errors during checkout.
+1. Cover testcases such as removing items.
+1. Cover testcases such as sorting items.
 
